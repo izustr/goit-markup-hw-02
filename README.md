@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-https://izustr.github.io/goit-markup-hw-01/
+# goit-markup-hw-02
+
+https://izustr.github.io/goit-markup-hw-02/
