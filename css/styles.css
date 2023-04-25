@@ -3,8 +3,9 @@
 	--grey: #757575;
 	--light-blue: #2196f3;
 	--white: #ffffff;
-	--main-banner-container: #2f303a;
+	--hero-banner-container: #2f303a;
 	--footer-container: #2f303a;
+	--team: #f5f4fa;
 	--portfolio-button: #f5f4fa;
 }
 
@@ -15,15 +16,14 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-
+/* główna nawigacja na stronie logo + podstrony + kontakty */
 .menu-logo {
 	text-decoration: none;
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 31px;
-	/* identical to box height */
+	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--light-blue);
 }
@@ -34,7 +34,7 @@ body {
 	list-style-type: none;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.15;
 	letter-spacing: 0.02em;
 }
 .menu-nav-link {
@@ -48,7 +48,7 @@ body {
 .menu-contacts {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.15;
 	letter-spacing: 0.02em;
 }
 .menu-contact-link {
@@ -59,24 +59,24 @@ body {
 .menu-contact-link:focus {
 	color: var(--light-blue);
 }
-.main-banner {
-	background-color: var(--main-banner-container);
+
+/* główny tytuł strony hero */
+.hero-banner {
+	background-color: var(--hero-banner-container);
 }
-.main-banner-titel {
+.hero-banner-titel {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 60px;
-	/* or 136% */
+	line-height: 1.37;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--white);
 }
-.main-banner-button {
+.hero-banner-button {
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 30px;
-	/* identical to box height, or 188% */
+	line-height: 1.88;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -86,28 +86,30 @@ body {
 	cursor: pointer;
 }
 
+/* 4 krótkie artykuły */
 .main-description > ul {
 	list-style-type: none;
 }
 .main-description-titel {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.15;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--black);
 }
 .main-description-text {
 	font-size: 14px;
-	line-height: 24px;
-	/* or 171% */
+	line-height: 1.72px;
 	letter-spacing: 0.03em;
 	color: var(--grey);
 }
+/* about us, czym się zajmujemy, same zdjęcia + tytuł*/
+
 .about-titel {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--black);
@@ -115,6 +117,60 @@ body {
 .about > ul {
 	list-style-type: none;
 }
+
+/* our team*/
+.team {
+	background-color: var(--team);
+}
+.team > ul {
+	list-style-type: none;
+}
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+.team-list-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+.team-list-position {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+/*portfolio ==================================================== */
+.button-nav > ul {
+	list-style-type: none;
+}
+.button-nav button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--black);
+	background-color: var(--portfolio-button);
+	border-style: hidden;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.button-nav button:hover,
+.button-nav button:focus {
+	color: var(--white);
+	background-color: var(--light-blue);
+}
+
+/*footer*/
 footer {
 	background-color: var(--footer-container);
 }
@@ -124,8 +180,7 @@ footer {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 31px;
-	/* identical to box height */
+	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--light-blue);
 }
@@ -140,16 +195,14 @@ footer {
 	color: var(--white);
 	font-style: normal;
 	font-size: 14px;
-	line-height: 24px;
-	/* or 171% */
+	line-height: 1.72;
 	letter-spacing: 0.03em;
 }
 .footer-contacts {
 	text-decoration: none;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 24px;
-	/* or 171% */
+	line-height: 1.72;
 	letter-spacing: 0.03em;
 
 	color: rgba(255, 255, 255, 0.6);
