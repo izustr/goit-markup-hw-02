@@ -91,10 +91,6 @@ body {
 	list-style-type: none;
 }
 
-/* .main-description-list > li {
-	width: 270px;
-	height: 101px;
-} */
 .main-description-title {
 	font-weight: 700;
 	font-size: 14px;
@@ -108,8 +104,6 @@ body {
 	line-height: 1.72px;
 	letter-spacing: 0.03em;
 	color: var(--grey);
-	/* width: 270px;
-	height: 75px; */
 }
 /* about us, czym się zajmujemy, same zdjęcia + tytuł*/
 
