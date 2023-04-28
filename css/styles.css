@@ -99,7 +99,7 @@ body {
 }
 .features-text {
 	font-size: 14px;
-	line-height: 1.72px;
+	line-height: 1.72;
 	letter-spacing: 0.03em;
 	color: var(--grey);
 }
@@ -155,10 +155,8 @@ body {
 
 /*portfolio ===================================================================== */
 
-.button-nav > ul {
-	list-style-type: none;
-}
 .button-nav button {
+	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.63;
@@ -232,4 +230,7 @@ footer {
 }
 .footer-contacts {
 	color: rgba(255, 255, 255, 0.6);
+}
+.hidden {
+	opacity: 0;
 }
